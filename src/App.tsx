@@ -135,7 +135,7 @@ function App() {
             justify="center"
             align="center"
           >
-            <Flex className="w-1/2 p-5" vertical>
+            <Flex className="lg:w-1/2 w-full lg:p-5 p-1" vertical>
               <Typography.Text className="text-xl text-foreground">
                 Ông Nguyễn Văn Thơm, 45 tuổi, ở An Giang nhận mình là người nhạy
                 cảm với mọi biến đổi từ dòng Mekong. Gia đình ông từng nhiều năm
