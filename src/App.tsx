@@ -10,7 +10,10 @@ function App() {
 
   return (
     <>
-      <Flex vertical className="relative h-full w-full scroll-smooth">
+      <Flex
+        vertical
+        className="relative h-full w-full scroll-smooth overflow-hidden"
+      >
         <Anchor
           items={images.map((_image, index) => {
             return {
@@ -135,7 +138,7 @@ function App() {
             justify="center"
             align="center"
           >
-            <Flex className="lg:w-1/2 w-full lg:p-5 p-1" vertical>
+            <Flex className="lg:w-1/2 w-full lg:p-5 p-2" vertical>
               <Typography.Text className="text-xl text-foreground">
                 Ông Nguyễn Văn Thơm, 45 tuổi, ở An Giang nhận mình là người nhạy
                 cảm với mọi biến đổi từ dòng Mekong. Gia đình ông từng nhiều năm
