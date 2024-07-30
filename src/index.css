@@ -1,68 +1,129 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+@layer base {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    /* Default background color of <body />...etc */
+    --background: #fafafa;
+    --foreground: #4d4d4d;
+    --dark: #263238;
+    --blue-dark: #1d2f40;
+
+    /* Background color for <Card /> */
+    --card: #ffffff;
+    --card-foreground: #4d4d4d;
+
+    /* Muted backgrounds such as <TabsList />, <Skeleton /> and <Switch /> */
+    --muted: #758994;
+    --muted-foreground: #ffffff;
+
+    /* Background color for popovers such as <DropdownMenu />, <HoverCard />, <Popover /> */
+    --popover: #ffffff;
+    --popover-foreground: #4d4d4d;
+
+    /* Primary colors for <Button /> */
+    --primary: #ff6b00;
+    --primary-foreground: #ffffff;
+
+    --fade-second-primary: #e5ffef;
+    --second-primary: #009035;
+    --second-primary-foreground: #ffffff;
+
+    /* Secondary colors for <Button /> */
+    --secondary: #fbc095;
+    --secondary-foreground: #ff6a00;
+
+    /* Used for accents such as hover effects on <DropdownMenuItem>, <SelectItem>...etc */
+    --accent: #eeeeee;
+    --accent-foreground: #4d4d4d;
+
+    /* Used for destructive actions such as <Button variant="destructive"> */
+    --destructive: #de1b35;
+    --destructive-foreground: #fafafa;
+
+    /* Default border color */
+    --border: #e8e5e3;
+
+    /* Border color for inputs such as <Input />, <Select />, <Textarea /> */
+    --input: #e8e5e3;
+
+    /* Used for focus ring */
+    --ring: #ff6a00;
+
+    --normal: #2a2e3640;
+    --warn: #faad14;
+    --error: #ff4d4f;
+    --success: #52c41a;
+    --incoming-success: #1ac4bc;
+    --blue: #1677ff;
+    --grey: #c1c1c1;
+    --light-grey: #f2f2f2;
+    --black-friday: rgb(0, 0, 0, 0.75);
+
+    --sky-height: 75rem;
   }
-  a:hover {
-    color: #747bff;
+
+  .dark {
+    /* Default background color of <body />...etc */
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    /* Muted backgrounds such as <TabsList />, <Skeleton /> and <Switch /> */
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    /* Background color for <Card /> */
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    /* Background color for popovers such as <DropdownMenu />, <HoverCard />, <Popover /> */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    /* Default border color */
+    --border: 214.3 31.8% 91.4%;
+
+    /* Border color for inputs such as <Input />, <Select />, <Textarea /> */
+    --input: 214.3 31.8% 91.4%;
+
+    /* Primary colors for <Button /> */
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary colors for <Button /> */
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    /* Used for accents such as hover effects on <DropdownMenuItem>, <SelectItem>...etc */
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    /* Used for destructive actions such as <Button variant="destructive"> */
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Used for focus ring */
+    --ring: 215 20.2% 65.1%;
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100%;
+    max-width: 100vw;
+    font-size: 16px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: open sans, Helvetica, Arial, sans-serif;
   }
 }
