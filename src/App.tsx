@@ -1,12 +1,24 @@
 import { Anchor, Flex, Typography } from "antd";
 import { AnchorLinkItemProps } from "antd/es/anchor/Anchor";
-import { chart1, m1, m2 } from "./assets";
+import { m1, m2, wes1, wes2 } from "./assets";
 import Section from "./components/Section";
 import useAppViewModel from "./hooks/useAppViewModel";
 import { cn } from "./utils/helpers";
 
 function App() {
   const { images, currentImage, onScrollChange } = useAppViewModel();
+
+  const content = {
+    h1: {
+      title: "Phát triển bền vững cùng sông Sài Gòn – Giải pháp từ thế hệ trẻ",
+      subTitle:
+        "Từ vùng đất hình thành nhờ quá trình bổi lở, Đồng bằng sông Cửu Long đang dần biến mất khi quy luật này đảo chiều hai thập kỷ qua. Sạt lở ngày càng thắng thế, trong khi bồi lắng giảm dần.",
+    },
+    sec1: "7.000 năm trước, Đồng bằng sông Cửu Long (ĐBSCL) chưa hình thành. Khu vực này khi đó là một vịnh biển nông với mực nước dâng đến Phnom Penh (Campuchia).",
+    sec2: "Qua thời gian, nước biển rút dần, phù sa từ dòng Mekong bồi tụ. ĐBSCL nhờ đó vươn ra Biển Đông trung bình 16 m/năm, mở rộng theo hướng Cà Mau 26 m/năm.",
+    sec3: "Sau 6.000 năm, ĐBSCL trở thành vùng châu thổ lớn thứ ba, nhưng non trẻ nhất thế giới khi các đồng bằng lớn như Bengal (Ấn Độ) và Mississippi (Mỹ) có tuổi đời lên tới hàng trăm triệu năm.",
+    sec4: "Châu thổ sông Cửu Long ngày nay trải dài 13 tỉnh, thành Tây Nam Bộ, với diện tích khoảng 40.000 km2, là nơi sinh sống của 17,4 triệu người. Nơi đây chiếm 50% sản lượng lúa gạo, 65% thuỷ sản nuôi trồng, và đóng góp 17% GDP cả nước.",
+  };
 
   return (
     <>
@@ -36,15 +48,13 @@ function App() {
           <Section id="section0">
             <Flex vertical className="w-2/3" justify="center" align="center">
               <Typography.Text className="text-center text-5xl font-bold text-white">
-                6.000 năm bồi lở của hạ nguồn Mekong
+                {content.h1.title}
               </Typography.Text>
               <Typography.Paragraph
                 className="text-center font-tino text-xl text-white
               "
               >
-                Từ vùng đất hình thành nhờ quá trình bổi lở, Đồng bằng sông Cửu
-                Long đang dần biến mất khi quy luật này đảo chiều hai thập kỷ
-                qua. Sạt lở ngày càng thắng thế, trong khi bồi lắng giảm dần.
+                {content.h1.subTitle}
               </Typography.Paragraph>
             </Flex>
           </Section>
@@ -52,9 +62,7 @@ function App() {
             <Flex className="w-4/5 items-center justify-center md:justify-end">
               <Flex className="w-[450px] rounded-3xl bg-white p-5">
                 <Typography.Text className="text-xl text-foreground">
-                  7.000 năm trước, Đồng bằng sông Cửu Long (ĐBSCL) chưa hình
-                  thành. Khu vực này khi đó là một vịnh biển nông với mực nước
-                  dâng đến Phnom Penh (Campuchia).
+                  {content.sec1}
                 </Typography.Text>
               </Flex>
             </Flex>
@@ -63,9 +71,7 @@ function App() {
             <Flex className="w-4/5 items-center justify-center md:justify-end">
               <Flex className="w-[450px] rounded-3xl bg-white p-5">
                 <Typography.Text className="text-xl text-foreground">
-                  Qua thời gian, nước biển rút dần, phù sa từ dòng Mekong bồi
-                  tụ. ĐBSCL nhờ đó vươn ra Biển Đông trung bình 16 m/năm, mở
-                  rộng theo hướng Cà Mau 26 m/năm.
+                  {content.sec2}
                 </Typography.Text>
               </Flex>
             </Flex>
@@ -79,10 +85,7 @@ function App() {
               >
                 <Flex className="w-full rounded-3xl bg-white">
                   <Typography.Text className="m-5 text-xl text-foreground">
-                    Sau 6.000 năm, ĐBSCL trở thành vùng châu thổ lớn thứ ba,
-                    nhưng non trẻ nhất thế giới khi các đồng bằng lớn như Bengal
-                    (Ấn Độ) và Mississippi (Mỹ) có tuổi đời lên tới hàng trăm
-                    triệu năm.
+                    {content.sec3}
                   </Typography.Text>
                 </Flex>
                 <Flex gap={20} className="w-full">
@@ -124,73 +127,100 @@ function App() {
             <Flex className="w-4/5 items-center justify-center md:justify-end">
               <Flex className="w-[450px] rounded-3xl bg-white p-5">
                 <Typography.Text className="text-xl text-foreground">
-                  Châu thổ sông Cửu Long ngày nay trải dài 13 tỉnh, thành Tây
-                  Nam Bộ, với diện tích khoảng 40.000 km2, là nơi sinh sống của
-                  17,4 triệu người. Nơi đây chiếm 50% sản lượng lúa gạo, 65%
-                  thuỷ sản nuôi trồng, và đóng góp 17% GDP cả nước.
+                  {content.sec4}
                 </Typography.Text>
               </Flex>
             </Flex>
           </Section>
           <Flex
             vertical
-            className={cn("w-full bg-white")}
+            className="w-full bg-white"
             justify="center"
             align="center"
           >
-            <Flex className="lg:w-1/2 lg:p-5 p-2" vertical>
+            <Flex className="lg:p-5 p-2 mx-[250px]" vertical gap={60}>
               <Typography.Text className="text-xl text-foreground">
-                Ông Nguyễn Văn Thơm, 45 tuổi, ở An Giang nhận mình là người nhạy
-                cảm với mọi biến đổi từ dòng Mekong. Gia đình ông từng nhiều năm
-                sống tại Biển Hồ Tonle Sap (Campuchia) rồi xuôi dòng di cư về An
-                Giang. Nhiều thế hệ sống trên sông, ông thấy rõ 20 năm qua dòng
-                sông đã "lạc điệu". <br /> <br /> Năm 2019, khi nghe những người
-                bà con ở Campuchia than nguồn cá tôm ngày càng cạn kiệt, còn
-                nước hồ Tonle Sap bỗng đổi màu từ nâu sang xanh, ông hiểu ngay
-                vấn đề. Sông xanh, tức không còn phù sa nữa, chỉ là dòng nước
-                đói. Càng về hạ nguồn, "cơn đói" sẽ càng trầm trọng.
-                <br /> <br /> "Tục ngữ Campuchia có câu nơi nào có nước, nơi đó
-                có cá. Nhưng dường như vùng đồng bằng này không thật sự còn nước
-                nữa", ông tự đúc kết.
-                <br /> <br /> Những người dân như ông Thơm sống phụ thuộc vào
-                dòng sông, còn con sông lại chịu tác động của thượng nguồn.
-                <br /> <br /> Trước năm 1990, trung bình mỗi năm sông Mekong tải
-                160 triệu tấn phù sa mịn, lơ lửng trong nước và 30 triệu tấn cát
-                sỏi ở đáy sông về ĐBSCL. Đây là nguồn tài nguyên quan trọng bồi
-                đắp cho sông, biển và hơn 30.000 km kênh nhân tạo ĐBSCL suốt
-                hàng nghìn năm.
-                <br /> <br /> Từ một trong những vùng đất màu mỡ nhất thế giới,
-                hai thập niên qua, nguồn dinh dưỡng này đang ngày càng cạn kiệt
-                khiến vùng châu thổ Cửu Long rơi vào cảnh sạt lở liên miên. Tốc
-                độ bồi đắp không theo kịp tình trạng xói lở, hệ quả là vùng đồng
-                bằng non trẻ đang teo lại. Suốt hàng nghìn năm, châu thổ này mở
-                rộng với tốc độ 16 km2 - khoảng 3.000 sân bóng đá - mỗi năm. Giờ
-                đây, cùng khoảng thời gian đó, nó lại mất trung bình 5 km2 đất,
-                tương đương 926 sân bóng đá.
-                <br /> <br /> "Bên lở bên bồi là quy luật tự nhiên từ ngàn xưa
-                trong tiến trình hình thành châu thổ sông Mekong. Song về tổng
-                thể, đồng bằng Mekong luôn nở ra do được bồi nhiều hơn", thạc sĩ
-                Nguyễn Hữu Thiện, chuyên gia độc lập hơn 20 năm nghiên cứu về
-                ĐBSCL, phân tích. <br /> <br />
-                Trung bình mỗi năm, phù sa và cát đi được 200 km trên dòng
-                Mekong vào mùa lũ, tức tháng 7 đến 9 hàng năm. Mất 20-30 năm,
-                các trầm tích này mới đi hết chặng đường 4.400 km từ Trung Quốc
-                về Việt Nam. Khi đến hạ lưu, dòng chảy mang theo cát và sỏi sẽ
-                vừa bào mòn, vừa bồi đắp bờ sông theo nguyên lý "xói bên bờ lõm,
-                bồi bên bờ lồi". Trong khi đó, cát nhỏ, phù sa và bùn mịn nhẹ
-                hơn đổ ra biển. Một phần trong số này sẽ lắng xuống ở cửa sông
-                giúp mở rộng lãnh thổ, và cũng là lớp "áo giáp" bao bọc vùng
-                đồng bằng khỏi tác động gây sạt lở của sóng biển.
-                <br /> <br /> Tuy nhiên, quy luật này không còn đúng khi tốc độ
-                bồi - lở đạt ngưỡng cân bằng vào năm 1990. Đến 2005, lở đã chiếm
-                ưu thế khiến đồng bằng "teo" dần, theo nghiên cứu của Viện Khoa
-                học Thuỷ lợi miền Nam (SIWRR).
-                <br /> <br />
-                <strong>
-                  Tốc độ thay đổi đường bờ biển giai đoạn 1990 - 2015
-                </strong>
+                Giải thích thuật ngữ <strong>“Phát triển bền vững"</strong>{" "}
+                <br /> <br /> Để làm rõ hơn thuật ngữ trên, Ủy ban Thế giới về
+                môi trường và phát triển (WCED) (1987) đã đưa ra khái niệm phát
+                triển bền vững là "sự phát triển có thể đáp ứng được những nhu
+                cầu hiện tại mà không ảnh hưởng, tổn hại đến những khả năng đáp
+                ứng nhu cầu của các thế hệ tương lai..."
               </Typography.Text>
-              <img src={chart1} className="h-full w-full object-contain" />
+              <Flex className="h-[350px]">
+                <Flex gap={20} className="absolute left-10 z-10 right-10">
+                  <Flex vertical>
+                    <Typography.Text className="text-xl italic text-blue">
+                      👉 Theo bạn, bạn hãy đề xuất giải pháp để bảo vệ môi
+                      trường hệ sinh thái của sông sài gòn?
+                    </Typography.Text>
+                    <img src={wes1} className="h-full w-full object-contain" />
+                  </Flex>
+                  <Flex vertical>
+                    <Typography.Text className="text-xl italic text-blue">
+                      👉 Bạn hãy đề xuất những giải pháp khắc phục tình trạng
+                      chất lượng nước “suy giảm” của sông sài gòn?
+                    </Typography.Text>
+                    <img src={wes2} className="h-full w-full object-contain" />
+                  </Flex>
+                </Flex>
+              </Flex>
+              <Typography.Text className="text-xl text-foreground">
+                - Giới trẻ đề xuất nhiều giải pháp trực tiếp tác động đến môi
+                trường sông như: tăng cường vệ sinh, thu gom rác, xây dựng khu
+                bảo tồn, khai thác cát hợp lý... Điều này cho thấy giới trẻ có
+                mong muốn hành động ngay để cải thiện tình hình. Việc đề xuất
+                nâng cao nhận thức, tuyên truyền cho thấy giới trẻ hiểu rõ tầm
+                quan trọng của việc thay đổi hành vi của cộng đồng.
+                <br />- Giới trẻ nhận thức rõ rằng việc thay đổi hành vi của con
+                người là yếu tố quan trọng để cải thiện chất lượng nước. Bên
+                cạnh việc nâng cao ý thức, giới trẻ cũng đề xuất các giải pháp
+                kỹ thuật như xây dựng hệ thống xử lý nước thải, quản lý rác thải
+                hiệu quả.
+                <br /> Qua hai biểu đồ, có thể thấy giới trẻ việt nam đã có nhận
+                thức rất tốt về vấn đề ô nhiễm sông sài gòn và có những đề xuất
+                giải pháp rất thiết thực. Điều này cho thấy một thế hệ trẻ có ý
+                thức bảo vệ môi trường và mong muốn đóng góp vào việc xây dựng
+                một thành phố xanh, sạch, đẹp. <br /> <br />
+                <strong> Nâng cao ý thức và trách nhiệm cộng đồng</strong>: vai
+                trò của thế hệ trẻ trong việc nâng cao ý thức và trách nhiệm
+                cộng đồng là vô cùng quan trọng. Bằng những hoạt động thiết
+                thực, những thông điệp truyền thông ý nghĩa, thế hệ trẻ có thể
+                tác động đến suy nghĩ và hành động của mọi người xung quanh, góp
+                phần lan tỏa tinh thần bảo vệ môi trường, bảo vệ sông sài gòn.{" "}
+                <br />
+                <br /> <strong>Xây dựng mô hình cộng đồng chung tay</strong>:
+                thế hệ trẻ có thể tiên phong trong việc xây dựng các mô hình
+                cộng đồng chung tay bảo vệ dòng sông. Các hoạt động như thu gom
+                rác thải, trồng cây xanh, dọn dẹp vệ sinh bờ sông, tuyên truyền
+                vận động người dân… sẽ góp phần nâng cao ý thức trách nhiệm của
+                cộng đồng, đồng thời tạo ra những thay đổi tích cực cho môi
+                trường. <br />
+                <br /> <strong>Kết nối - hợp tác - lan tỏa</strong>: thế hệ trẻ
+                có trách nhiệm trọng trong việc kết nối, hợp tác với các tổ
+                chức, cá nhân, doanh nghiệp để cùng chung tay bảo vệ dòng sông
+                sài gòn. Các hoạt động kết nối, chia sẻ thông tin, ý tưởng, tạo
+                ra sức lan tỏa rộng rãi trong cộng đồng là yếu tố quan trọng để
+                thúc đẩy hành động bảo vệ môi trường. <br />
+                <br /> <strong>Tận dụng sức mạnh của mạng xã hội</strong>: các
+                nền tảng mạng xã hội là công cụ hiệu quả để lan tỏa thông điệp
+                bảo vệ môi trường. Thế hệ trẻ có thể tạo ra các chiến dịch
+                truyền thông, các video clip ngắn, các bài viết chia sẻ kinh
+                nghiệm để nâng cao nhận thức của cộng đồng.
+                <br />
+                <br /> Giới trẻ ngày nay đã có xu hướng đã nhận thức tốt về vấn
+                đề nhưng vẫn chưa tác động được nhiều đến việc lan tỏa hành vi
+                phát triển bền vững cùng sông Sài Gòn. Điều này cho thấy, mặc dù
+                ý thức về bảo vệ môi trường đã được nâng cao, nhưng việc chuyển
+                đổi nhận thức thành hành động cụ thể vẫn còn nhiều hạn chế. Một
+                trong những nguyên nhân chính là do thiếu các cơ hội thực hành
+                và động lực để tham gia các hoạt động bảo vệ môi trường. Nhiều
+                bạn trẻ muốn đóng góp nhưng chưa biết bắt đầu từ đâu hoặc chưa
+                có điều kiện để thực hiện. Nhìn chung, kết quả nghiên cứu chính
+                là cơ sở phát triển và định hình các phương pháp, cách thức đem
+                phát triển bền vững cùng sông Sài Gòn đến với giới trẻ và từ đó
+                lan rộng ra đến các nhóm đối tượng lớn tuổi hơn.
+              </Typography.Text>
             </Flex>
           </Flex>
         </Flex>
