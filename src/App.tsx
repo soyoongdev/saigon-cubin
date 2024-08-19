@@ -1,6 +1,6 @@
 import { Anchor, Flex, Typography } from "antd";
 import { AnchorLinkItemProps } from "antd/es/anchor/Anchor";
-import { m1, m2, wes1, wes2 } from "./assets";
+import { wes1, wes2 } from "./assets";
 import Section from "./components/Section";
 import useAppViewModel from "./hooks/useAppViewModel";
 import { cn } from "./utils/helpers";
@@ -86,38 +86,6 @@ function App() {
                   <Typography.Text className="m-5 text-xl text-foreground">
                     {content.sec3}
                   </Typography.Text>
-                </Flex>
-                <Flex gap={20} className="w-full">
-                  <Flex
-                    vertical
-                    gap={10}
-                    className="w-1/2"
-                    justify="center"
-                    align="center"
-                  >
-                    <img
-                      src={m1}
-                      className="h-full w-full rounded-full object-cover"
-                    />
-                    <Typography.Text className="font-tino text-xl text-white">
-                      Đồng bằng Mississippi
-                    </Typography.Text>
-                  </Flex>
-                  <Flex
-                    vertical
-                    gap={10}
-                    className="w-1/2"
-                    justify="center"
-                    align="center"
-                  >
-                    <img
-                      src={m2}
-                      className="h-full w-full rounded-full object-cover"
-                    />
-                    <Typography.Text className="font-tino text-xl text-white">
-                      Đồng bằng Bengal
-                    </Typography.Text>
-                  </Flex>
                 </Flex>
               </Flex>
             </Flex>
