@@ -11,8 +11,7 @@ function App() {
   const content = {
     h1: {
       title: "Phát triển bền vững cùng sông Sài Gòn – Giải pháp từ thế hệ trẻ",
-      subTitle:
-        "Từ vùng đất hình thành nhờ quá trình bổi lở, Đồng bằng sông Cửu Long đang dần biến mất khi quy luật này đảo chiều hai thập kỷ qua. Sạt lở ngày càng thắng thế, trong khi bồi lắng giảm dần.",
+      subTitle: "Dòng chảy cuộc sống, linh hồn của thành phố Hồ Chí Minh.",
     },
     sec1: "7.000 năm trước, Đồng bằng sông Cửu Long (ĐBSCL) chưa hình thành. Khu vực này khi đó là một vịnh biển nông với mực nước dâng đến Phnom Penh (Campuchia).",
     sec2: "Qua thời gian, nước biển rút dần, phù sa từ dòng Mekong bồi tụ. ĐBSCL nhờ đó vươn ra Biển Đông trung bình 16 m/năm, mở rộng theo hướng Cà Mau 26 m/năm.",
@@ -151,14 +150,14 @@ function App() {
                 <Flex vertical>
                   <Typography.Text className="text-xl italic text-blue">
                     👉 Theo bạn, bạn hãy đề xuất giải pháp để bảo vệ môi trường
-                    hệ sinh thái của sông sài gòn?
+                    hệ sinh thái của sông Sài Gòn?
                   </Typography.Text>
                   <img src={wes1} className="h-full w-full object-contain" />
                 </Flex>
                 <Flex vertical>
                   <Typography.Text className="text-xl italic text-blue">
                     👉 Bạn hãy đề xuất những giải pháp khắc phục tình trạng chất
-                    lượng nước “suy giảm” của sông sài gòn?
+                    lượng nước “suy giảm” của sông Sài Gòn?
                   </Typography.Text>
                   <img src={wes2} className="h-full w-full object-contain" />
                 </Flex>
@@ -176,7 +175,7 @@ function App() {
                 kỹ thuật như xây dựng hệ thống xử lý nước thải, quản lý rác thải
                 hiệu quả.
                 <br /> Qua hai biểu đồ, có thể thấy giới trẻ việt nam đã có nhận
-                thức rất tốt về vấn đề ô nhiễm sông sài gòn và có những đề xuất
+                thức rất tốt về vấn đề ô nhiễm sông Sài Gòn và có những đề xuất
                 giải pháp rất thiết thực. Điều này cho thấy một thế hệ trẻ có ý
                 thức bảo vệ môi trường và mong muốn đóng góp vào việc xây dựng
                 một thành phố xanh, sạch, đẹp. <br /> <br />
@@ -185,7 +184,7 @@ function App() {
                 cộng đồng là vô cùng quan trọng. Bằng những hoạt động thiết
                 thực, những thông điệp truyền thông ý nghĩa, thế hệ trẻ có thể
                 tác động đến suy nghĩ và hành động của mọi người xung quanh, góp
-                phần lan tỏa tinh thần bảo vệ môi trường, bảo vệ sông sài gòn.{" "}
+                phần lan tỏa tinh thần bảo vệ môi trường, bảo vệ sông Sài Gòn.{" "}
                 <br />
                 <br /> <strong>Xây dựng mô hình cộng đồng chung tay</strong>:
                 thế hệ trẻ có thể tiên phong trong việc xây dựng các mô hình
@@ -197,7 +196,7 @@ function App() {
                 <br /> <strong>Kết nối - hợp tác - lan tỏa</strong>: thế hệ trẻ
                 có trách nhiệm trọng trong việc kết nối, hợp tác với các tổ
                 chức, cá nhân, doanh nghiệp để cùng chung tay bảo vệ dòng sông
-                sài gòn. Các hoạt động kết nối, chia sẻ thông tin, ý tưởng, tạo
+                Sài Gòn. Các hoạt động kết nối, chia sẻ thông tin, ý tưởng, tạo
                 ra sức lan tỏa rộng rãi trong cộng đồng là yếu tố quan trọng để
                 thúc đẩy hành động bảo vệ môi trường. <br />
                 <br /> <strong>Tận dụng sức mạnh của mạng xã hội</strong>: các
@@ -219,6 +218,11 @@ function App() {
                 phát triển bền vững cùng sông Sài Gòn đến với giới trẻ và từ đó
                 lan rộng ra đến các nhóm đối tượng lớn tuổi hơn.
               </Typography.Text>
+              <Flex justify="end" className="lg:mx-[200px] xl:mx-[250px] mx-5">
+                <Typography.Text className="text-xl font-bold">
+                  Dương Đình Huy
+                </Typography.Text>
+              </Flex>
             </Flex>
           </Flex>
         </Flex>
