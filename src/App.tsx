@@ -134,12 +134,12 @@ function App() {
           </Section>
           <Flex
             vertical
-            className="w-full bg-white"
+            className="w-full bg-white py-5"
             justify="center"
             align="center"
           >
-            <Flex className="lg:p-5 p-2 mx-[250px]" vertical gap={60}>
-              <Typography.Text className="text-xl text-foreground">
+            <Flex className="" vertical gap={60}>
+              <Typography.Text className="text-xl text-foreground lg:mx-[200px] xl:mx-[250px] mx-5">
                 Giải thích thuật ngữ <strong>“Phát triển bền vững"</strong>{" "}
                 <br /> <br /> Để làm rõ hơn thuật ngữ trên, Ủy ban Thế giới về
                 môi trường và phát triển (WCED) (1987) đã đưa ra khái niệm phát
@@ -147,25 +147,23 @@ function App() {
                 cầu hiện tại mà không ảnh hưởng, tổn hại đến những khả năng đáp
                 ứng nhu cầu của các thế hệ tương lai..."
               </Typography.Text>
-              <Flex className="h-[350px]">
-                <Flex gap={20} className="absolute left-10 z-10 right-10">
-                  <Flex vertical>
-                    <Typography.Text className="text-xl italic text-blue">
-                      👉 Theo bạn, bạn hãy đề xuất giải pháp để bảo vệ môi
-                      trường hệ sinh thái của sông sài gòn?
-                    </Typography.Text>
-                    <img src={wes1} className="h-full w-full object-contain" />
-                  </Flex>
-                  <Flex vertical>
-                    <Typography.Text className="text-xl italic text-blue">
-                      👉 Bạn hãy đề xuất những giải pháp khắc phục tình trạng
-                      chất lượng nước “suy giảm” của sông sài gòn?
-                    </Typography.Text>
-                    <img src={wes2} className="h-full w-full object-contain" />
-                  </Flex>
+              <Flex gap={20} className="mx-5 flex-col lg:flex-row">
+                <Flex vertical>
+                  <Typography.Text className="text-xl italic text-blue">
+                    👉 Theo bạn, bạn hãy đề xuất giải pháp để bảo vệ môi trường
+                    hệ sinh thái của sông sài gòn?
+                  </Typography.Text>
+                  <img src={wes1} className="h-full w-full object-contain" />
+                </Flex>
+                <Flex vertical>
+                  <Typography.Text className="text-xl italic text-blue">
+                    👉 Bạn hãy đề xuất những giải pháp khắc phục tình trạng chất
+                    lượng nước “suy giảm” của sông sài gòn?
+                  </Typography.Text>
+                  <img src={wes2} className="h-full w-full object-contain" />
                 </Flex>
               </Flex>
-              <Typography.Text className="text-xl text-foreground">
+              <Typography.Text className="text-xl text-foreground lg:mx-[200px] xl:mx-[250px] mx-5">
                 - Giới trẻ đề xuất nhiều giải pháp trực tiếp tác động đến môi
                 trường sông như: tăng cường vệ sinh, thu gom rác, xây dựng khu
                 bảo tồn, khai thác cát hợp lý... Điều này cho thấy giới trẻ có
