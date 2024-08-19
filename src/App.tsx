@@ -13,10 +13,10 @@ function App() {
       title: "Phát triển bền vững cùng sông Sài Gòn – Giải pháp từ thế hệ trẻ",
       subTitle: "Dòng chảy cuộc sống, linh hồn của thành phố Hồ Chí Minh.",
     },
-    sec1: "7.000 năm trước, Đồng bằng sông Cửu Long (ĐBSCL) chưa hình thành. Khu vực này khi đó là một vịnh biển nông với mực nước dâng đến Phnom Penh (Campuchia).",
-    sec2: "Qua thời gian, nước biển rút dần, phù sa từ dòng Mekong bồi tụ. ĐBSCL nhờ đó vươn ra Biển Đông trung bình 16 m/năm, mở rộng theo hướng Cà Mau 26 m/năm.",
-    sec3: "Sau 6.000 năm, ĐBSCL trở thành vùng châu thổ lớn thứ ba, nhưng non trẻ nhất thế giới khi các đồng bằng lớn như Bengal (Ấn Độ) và Mississippi (Mỹ) có tuổi đời lên tới hàng trăm triệu năm.",
-    sec4: "Châu thổ sông Cửu Long ngày nay trải dài 13 tỉnh, thành Tây Nam Bộ, với diện tích khoảng 40.000 km2, là nơi sinh sống của 17,4 triệu người. Nơi đây chiếm 50% sản lượng lúa gạo, 65% thuỷ sản nuôi trồng, và đóng góp 17% GDP cả nước.",
+    sec1: "Ngày nay, các bạn trẻ đã có nhận thức về bảo vệ môi trường sông và phát triển bền vững cùng sông Sài Gòn nhưng việc thực hiện và hành động chưa phổ biến. Do đó, việc tìm hiểu và nắm bắt vấn đề này ở bộ phận giới trẻ sẽ giúp tìm ra giải pháp phù hợp, nâng cao nhận thức, cải thiện về mặt hành vi, cũng như hình thành và lan rộng ý thức tới cộng đồng.",
+    sec2: "Sông Sài Gòn không chỉ là biểu tượng lịch sử và văn hóa của thành phố. Hồ Chí Minh mà còn là huyết mạch kinh tế, đóng vai trò quan trọng trong vận chuyển hàng hóa và phát triển công nghiệp. Tuy nhiên, sông đang đối mặt với nhiều vấn đề về môi trường như ô nhiễm và suy giảm hệ sinh thái, đòi hỏi những nghiên cứu kỹ lưỡng để đưa ra giải pháp bảo vệ và phục hồi. Đồng thời, việc đô thị hóa nhanh chóng yêu cầu một quy hoạch hợp lý để tận dụng tiềm năng của sông trong phát triển bền vững. Do đó, việc nghiên cứu về nhận thức của người dân về sông Sài Gòn còn đóng góp vào giáo dục và khoa học, cung cấp kiến thức mới và thay đổi thực trạng của sông Sài Gòn hiện nay.",
+    sec3: "Thế hệ trẻ ngày nay đang đứng trước một nhiệm vụ quan trọng: bảo vệ và gìn giữ dòng sông Sài Gòn cho các thế hệ mai sau. Với năng lượng trẻ trung, nhiệt huyết và tinh thần sáng tạo, họ có khả năng đưa ra những giải pháp mới mẻ và hiệu quả để đối phó với các thách thức mà dòng sông đang phải đối mặt.",
+    sec4: "Vấn đề phát triển bền vững cùng sông Sài Gòn vẫn chưa được phổ biến ở giới trẻ. Ngày nay, những người trẻ, tiêu biểu là học sinh, sinh viên,… đều đã hình thành những ý thức nhất định về thực trạng và sự cấp thiết của việc phát triển kinh tế và bảo vệ sông Sài Gòn. Nhưng trong quá trình tiếp cận, tìm hiểu, thực hiện lại gặp nhiều khó khăn. Từ đó tạo nên những cản trở trong việc phát triển bền vững này trở nên hiệu quả và phổ biến với mọi người.",
   };
 
   return (

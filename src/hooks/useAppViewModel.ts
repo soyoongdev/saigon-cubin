@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { a1, a2, a3, a4, a5, slide1 } from "../assets";
+import { a1, a2, a3, a4, a5 } from "../assets";
 
 export interface ScreenType {
   key: React.Key;
@@ -18,7 +18,7 @@ export default function useAppViewModel() {
         setCurrentImage(a1);
         break;
       case "#section1":
-        setCurrentImage(slide1);
+        setCurrentImage(a2);
         break;
       case "#section2":
         setCurrentImage(a3);
