@@ -10,5 +10,17 @@ import NoImage from "./no-image.jpg";
 import slide1 from "./slide1.jpeg";
 import wes1 from "./wes1.png";
 import wes2 from "./wes2.png";
+import abcNew from "./abc_new.jpg";
+import asxNew from "./asx_new.jpeg";
+import bac_ho_new from "./bac_ho_new.jpg";
+import bieuDo1 from "./bieudo1_new.png";
+import bieuDo2 from "./bieudo2_new.png";
+import bieuDo3 from "./bieudo3_new.png";
+import hinh1New from "./hinh1_new.jpg";
+import hinh2New from "./hinh2_new.jpg";
+import hinh3New from "./hinh3_new.jpg";
+import hinh4New from "./hinh4_new.jpg";
+import hinh5New from "./hinh5_new.jpg";
+import hinh6New from "./hinh6_new.jpg";
 
-export { NoImage, a1, a2, a3, a4, a5, chart1, m1, m2, slide1, wes1, wes2 };
+export { NoImage, a1, a2, a3, a4, a5, chart1, m1, m2, slide1, wes1, wes2, abcNew, asxNew,bac_ho_new, hinh1New, hinh2New, hinh3New, hinh4New, hinh5New, hinh6New, bieuDo1, bieuDo2, bieuDo3 };

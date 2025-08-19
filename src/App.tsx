@@ -1,6 +1,6 @@
 import { Anchor, Flex, Typography } from "antd";
 import { AnchorLinkItemProps } from "antd/es/anchor/Anchor";
-import { wes1, wes2 } from "./assets";
+import { bieuDo1, bieuDo2, bieuDo3 } from "./assets";
 import Section from "./components/Section";
 import useAppViewModel from "./hooks/useAppViewModel";
 import { cn } from "./utils/helpers";
@@ -10,13 +10,13 @@ function App() {
 
   const content = {
     h1: {
-      title: "Phát triển bền vững cùng sông Sài Gòn – Giải pháp từ thế hệ trẻ",
-      subTitle: "Dòng chảy cuộc sống, linh hồn của thành phố Hồ Chí Minh.",
+      title: "Ánh sáng xanh và Sức khoẻ học đường",
+      subTitle: "Mỗi người dân yếu ớt, tức là cả nước yếu ớt. Mỗi người dân khoẻ mạnh, tức là cả nước khoẻ mạnh. (Chủ tịch Hồ Chí Minh)",
     },
-    sec1: "Ngày nay, các bạn trẻ đã có nhận thức về bảo vệ môi trường sông và phát triển bền vững cùng sông Sài Gòn nhưng việc thực hiện và hành động chưa phổ biến. Do đó, việc tìm hiểu và nắm bắt vấn đề này ở bộ phận giới trẻ sẽ giúp tìm ra giải pháp phù hợp, nâng cao nhận thức, cải thiện về mặt hành vi, cũng như hình thành và lan rộng ý thức tới cộng đồng.",
-    sec2: "Sông Sài Gòn không chỉ là biểu tượng lịch sử và văn hóa của thành phố. Hồ Chí Minh mà còn là huyết mạch kinh tế, đóng vai trò quan trọng trong vận chuyển hàng hóa và phát triển công nghiệp. Tuy nhiên, sông đang đối mặt với nhiều vấn đề về môi trường như ô nhiễm và suy giảm hệ sinh thái, đòi hỏi những nghiên cứu kỹ lưỡng để đưa ra giải pháp bảo vệ và phục hồi. Đồng thời, việc đô thị hóa nhanh chóng yêu cầu một quy hoạch hợp lý để tận dụng tiềm năng của sông trong phát triển bền vững. Do đó, việc nghiên cứu về nhận thức của người dân về sông Sài Gòn còn đóng góp vào giáo dục và khoa học, cung cấp kiến thức mới và thay đổi thực trạng của sông Sài Gòn hiện nay.",
-    sec3: "Thế hệ trẻ ngày nay đang đứng trước một nhiệm vụ quan trọng: bảo vệ và gìn giữ dòng sông Sài Gòn cho các thế hệ mai sau. Với năng lượng trẻ trung, nhiệt huyết và tinh thần sáng tạo, họ có khả năng đưa ra những giải pháp mới mẻ và hiệu quả để đối phó với các thách thức mà dòng sông đang phải đối mặt.",
-    sec4: "Vấn đề phát triển bền vững cùng sông Sài Gòn vẫn chưa được phổ biến ở giới trẻ. Ngày nay, những người trẻ, tiêu biểu là học sinh, sinh viên,… đều đã hình thành những ý thức nhất định về thực trạng và sự cấp thiết của việc phát triển kinh tế và bảo vệ sông Sài Gòn. Nhưng trong quá trình tiếp cận, tìm hiểu, thực hiện lại gặp nhiều khó khăn. Từ đó tạo nên những cản trở trong việc phát triển bền vững này trở nên hiệu quả và phổ biến với mọi người.",
+    sec1: "Trong thời đại công nghệ số phát triển mạnh mẽ, điện thoại thông minh đã trở thành vật bất ly thân đối với học sinh THPT. Tuy mang lại nhiều tiện ích trong học tập và giải trí, nhưng việc sử dụng điện thoại vào ban đêm – đặc biệt là ánh sáng xanh phát ra từ màn hình – đang ngày càng ảnh hưởng tiêu cực đến giấc ngủ và sức khỏe của học sinh. Nhiều bạn có thói quen thức khuya để lướt mạng xã hội, xem video hay học bài trên điện thoại, dẫn đến tình trạng ngủ muộn, mệt mỏi, giảm tập trung vào ngày hôm sau.",
+    sec2: "Khảo sát cho thấy phần lớn học sinh THPT ngủ sau 23h và có thời gian ngủ không đủ 7–8 tiếng mỗi đêm. Nguyên nhân chính là do sử dụng điện thoại trước khi ngủ để truy cập mạng xã hội, chơi game hoặc xem video. Tình trạng này dẫn đến mệt mỏi, buồn ngủ vào buổi sáng, ảnh hưởng nghiêm trọng tới hiệu quả học tập. Dù nhiều em đã biết đến tác hại, nhưng việc thay đổi hành vi vẫn chưa rõ rệt.",
+    sec3: "Thế hệ trẻ ngày nay đang đối mặt với một thử thách mới trong kỷ nguyên số: bảo vệ nhịp sinh học và sức khỏe thể chất trước sự tác động ngày càng lớn của ánh sáng xanh từ thiết bị điện tử. Với sự năng động, chủ động tiếp cận công nghệ và khả năng tự thay đổi thói quen, các bạn học sinh THPT hoàn toàn có thể trở thành những người tiên phong trong việc xây dựng lối sống số lành mạnh và khoa học.",
+    sec4: "Thói quen tiếp xúc ánh sáng xanh ban đêm làm rối loạn nhịp sinh học, ức chế melatonin và gây khó ngủ. Học sinh dễ ngủ muộn, ngủ không sâu, dẫn đến mệt mỏi, buồn ngủ vào sáng hôm sau. Tình trạng thiếu ngủ kéo dài làm giảm khả năng tập trung, trí nhớ, ảnh hưởng kết quả học tập. Ngoài ra, việc sử dụng thiết bị quá lâu còn gây mỏi mắt, giảm thị lực và tăng nguy cơ rối loạn tâm trạng, tác động tiêu cực tới sức khỏe thể chất lẫn tinh thần.",
   };
 
   return (
@@ -67,10 +67,17 @@ function App() {
             </Flex>
           </Section>
           <Section id="section2">
-            <Flex className="w-4/5 items-center justify-center md:justify-end">
+            <Flex className="w-4/5 flex-col-reverse items-center justify-between md:flex-row gap-5">
+              <Flex className="w-[450px] gap-5 bg-white flex-col p-5 rounded-3xl">
+                <Flex className=""><img src={bieuDo1} className="h-full w-full" /></Flex>
+                <Flex className=""><img src={bieuDo2} className="h-full w-full" /></Flex>
+              </Flex>
               <Flex className="w-[450px] rounded-3xl bg-white p-5">
                 <Typography.Text className="text-xl text-foreground">
-                  {content.sec2}
+                    <Typography.Text className="text-2xl font-bold italic text-foreground"> <strong><em>Thế Hệ Mất Ngủ Vì Điện Thoại</em></strong></Typography.Text>
+                    <br />
+                    <br />
+                    {content.sec2}
                 </Typography.Text>
               </Flex>
             </Flex>
@@ -106,85 +113,71 @@ function App() {
             align="center"
           >
             <Flex className="" vertical gap={60}>
-              <Typography.Text className="text-xl text-foreground lg:mx-[200px] xl:mx-[250px] mx-5">
-                Giải thích thuật ngữ <strong>“Phát triển bền vững"</strong>{" "}
-                <br /> <br /> Để làm rõ hơn thuật ngữ trên, Ủy ban Thế giới về
-                môi trường và phát triển (WCED) (1987) đã đưa ra khái niệm phát
-                triển bền vững là "sự phát triển có thể đáp ứng được những nhu
-                cầu hiện tại mà không ảnh hưởng, tổn hại đến những khả năng đáp
-                ứng nhu cầu của các thế hệ tương lai..."
+              <Flex gap={20} vertical>
+                <Typography.Text className="text-xl text-foreground lg:mx-[200px] xl:mx-[250px] mx-5">
+                <strong><em>a. Ánh sáng xanh và tác động sinh học:</em></strong>
+                <br />
+                <span className="ml-6">
+                  Nghiên cứu của Haghani chỉ ra rằng <strong>ánh sáng xanh ban đêm có khả năng ức
+                  chế melatonin – hormone điều hòa giấc ngủ</strong>, từ đó gây rối loạn nhịp sinh học
+                  và ảnh hưởng đến sức khỏe tổng thể (Haghani, 2024 NIH).
+                </span>
               </Typography.Text>
+              <Typography.Text className="text-xl text-foreground lg:mx-[200px] xl:mx-[250px] mx-5">
+                <strong><em>b. Nhịp sinh học:</em></strong>
+                <br />
+                <span className="ml-6">
+                  Theo báo cáo của Macharla, tiếp xúc với ánh sáng xanh trong 1–2 giờ trước khi
+                  ngủ sẽ <strong>làm chậm chu kỳ sinh học</strong>, dẫn đến mất ngủ, thức khuya và thức dậy
+                  trễ, ảnh hưởng đến năng lượng và khả năng tập trung của học sinh (Macharla,
+                  2025 Cureus).
+                </span>
+                </Typography.Text>
+                <Typography.Text className="text-xl text-foreground lg:mx-[200px] xl:mx-[250px] mx-5">
+                <strong><em>c. Mối liên hệ giữa học sinh và thói quen sử dụng thiết bị:</em></strong>
+                <br />
+                <span className="ml-6">
+                  Nghiên cứu của <em>Yang Chen</em>, học sinh là nhóm dễ bị tổn thương nhất trước ảnh
+                  hưởng của mạng xã hội và smartphone. Khi thói quen dùng điện thoại vào ban
+                  đêm trở nên phổ biến, nhiều học sinh gặp phải các vấn đề về rối loạn giấc ngủ
+                  và tâm lý (<em>Yang Chen</em>, 2024 APA PsycnNet).
+                  </span>
+              </Typography.Text>
+              </Flex>
               <Flex gap={20} className="mx-5 flex-col lg:flex-row">
                 <Flex vertical>
                   <Typography.Text className="text-xl italic text-blue">
-                    👉 Theo bạn, bạn hãy đề xuất giải pháp để bảo vệ môi trường
-                    hệ sinh thái của sông Sài Gòn?
+                    👉 Trong thời gian gần đây, bạn có gặp các vấn đề sau không?
                   </Typography.Text>
-                  <img src={wes1} className="h-full w-full object-contain" />
-                </Flex>
-                <Flex vertical>
-                  <Typography.Text className="text-xl italic text-blue">
-                    👉 Bạn hãy đề xuất những giải pháp khắc phục tình trạng chất
-                    lượng nước “suy giảm” của sông Sài Gòn?
-                  </Typography.Text>
-                  <img src={wes2} className="h-full w-full object-contain" />
+                  <img src={bieuDo3} className="h-full w-full object-contain" />
                 </Flex>
               </Flex>
               <Typography.Text className="text-xl text-foreground lg:mx-[200px] xl:mx-[250px] mx-5">
-                - Giới trẻ đề xuất nhiều giải pháp trực tiếp tác động đến môi
-                trường sông như: tăng cường vệ sinh, thu gom rác, xây dựng khu
-                bảo tồn, khai thác cát hợp lý... Điều này cho thấy giới trẻ có
-                mong muốn hành động ngay để cải thiện tình hình. Việc đề xuất
-                nâng cao nhận thức, tuyên truyền cho thấy giới trẻ hiểu rõ tầm
-                quan trọng của việc thay đổi hành vi của cộng đồng.
-                <br />- Giới trẻ nhận thức rõ rằng việc thay đổi hành vi của con
-                người là yếu tố quan trọng để cải thiện chất lượng nước. Bên
-                cạnh việc nâng cao ý thức, giới trẻ cũng đề xuất các giải pháp
-                kỹ thuật như xây dựng hệ thống xử lý nước thải, quản lý rác thải
-                hiệu quả.
-                <br /> Qua hai biểu đồ, có thể thấy giới trẻ việt nam đã có nhận
-                thức rất tốt về vấn đề ô nhiễm sông Sài Gòn và có những đề xuất
-                giải pháp rất thiết thực. Điều này cho thấy một thế hệ trẻ có ý
-                thức bảo vệ môi trường và mong muốn đóng góp vào việc xây dựng
-                một thành phố xanh, sạch, đẹp. <br /> <br />
-                <strong> Nâng cao ý thức và trách nhiệm cộng đồng</strong>: vai
-                trò của thế hệ trẻ trong việc nâng cao ý thức và trách nhiệm
-                cộng đồng là vô cùng quan trọng. Bằng những hoạt động thiết
-                thực, những thông điệp truyền thông ý nghĩa, thế hệ trẻ có thể
-                tác động đến suy nghĩ và hành động của mọi người xung quanh, góp
-                phần lan tỏa tinh thần bảo vệ môi trường, bảo vệ sông Sài Gòn.{" "}
+                <strong><em>Kết luận: </em></strong>
+                Khảo sát cho thấy <em>sự rối loạn nhịp sinh học không chỉ là hiện
+                tượng phổ biến mà còn ảnh hưởng rõ rệt đến sức khỏe thể chất và tinh
+                thần của học sinh.</em> Đây là một vấn đề đáng báo động và cần được quan tâm
+                nghiêm túc trong môi trường học đường.
+                Trước thực trạng gia tăng tình trạng rối loạn giấc ngủ và suy giảm sức khỏe do ánh sáng xanh từ điện thoại, việc xây dựng những giải pháp thiết thực là yêu cầu cấp bách. Những đề xuất dưới đây không chỉ hướng tới việc giúp học sinh THPT hình thành thói quen sử dụng thiết bị hợp lý, mà còn tạo sự phối hợp chặt chẽ giữa gia đình, nhà trường và cộng đồng, nhằm bảo vệ nhịp sinh học và nâng cao sức khỏe toàn diện cho thế hệ trẻ.
                 <br />
-                <br /> <strong>Xây dựng mô hình cộng đồng chung tay</strong>:
-                thế hệ trẻ có thể tiên phong trong việc xây dựng các mô hình
-                cộng đồng chung tay bảo vệ dòng sông. Các hoạt động như thu gom
-                rác thải, trồng cây xanh, dọn dẹp vệ sinh bờ sông, tuyên truyền
-                vận động người dân… sẽ góp phần nâng cao ý thức trách nhiệm của
-                cộng đồng, đồng thời tạo ra những thay đổi tích cực cho môi
-                trường. <br />
-                <br /> <strong>Kết nối - hợp tác - lan tỏa</strong>: thế hệ trẻ
-                có trách nhiệm trọng trong việc kết nối, hợp tác với các tổ
-                chức, cá nhân, doanh nghiệp để cùng chung tay bảo vệ dòng sông
-                Sài Gòn. Các hoạt động kết nối, chia sẻ thông tin, ý tưởng, tạo
-                ra sức lan tỏa rộng rãi trong cộng đồng là yếu tố quan trọng để
-                thúc đẩy hành động bảo vệ môi trường. <br />
-                <br /> <strong>Tận dụng sức mạnh của mạng xã hội</strong>: các
-                nền tảng mạng xã hội là công cụ hiệu quả để lan tỏa thông điệp
-                bảo vệ môi trường. Thế hệ trẻ có thể tạo ra các chiến dịch
-                truyền thông, các video clip ngắn, các bài viết chia sẻ kinh
-                nghiệm để nâng cao nhận thức của cộng đồng.
+                <span className="ml-6">
+                  - <strong>Tự xây dựng thời gian biểu</strong> hợp lý, đi ngủ trước 23h và đảm bảo ngủ đủ từ 7–8 tiếng mỗi đêm, giúp học sinh giữ nhịp sinh học ổn định, đảm bảo hiệu suất học tập và sức khỏe.
+                </span>
                 <br />
-                <br /> Giới trẻ ngày nay đã có xu hướng đã nhận thức tốt về vấn
-                đề nhưng vẫn chưa tác động được nhiều đến việc lan tỏa hành vi
-                phát triển bền vững cùng sông Sài Gòn. Điều này cho thấy, mặc dù
-                ý thức về bảo vệ môi trường đã được nâng cao, nhưng việc chuyển
-                đổi nhận thức thành hành động cụ thể vẫn còn nhiều hạn chế. Một
-                trong những nguyên nhân chính là do thiếu các cơ hội thực hành
-                và động lực để tham gia các hoạt động bảo vệ môi trường. Nhiều
-                bạn trẻ muốn đóng góp nhưng chưa biết bắt đầu từ đâu hoặc chưa
-                có điều kiện để thực hiện. Nhìn chung, kết quả nghiên cứu chính
-                là cơ sở phát triển và định hình các phương pháp, cách thức đem
-                phát triển bền vững cùng sông Sài Gòn đến với giới trẻ và từ đó
-                lan rộng ra đến các nhóm đối tượng lớn tuổi hơn.
+                <span className="ml-6">
+                  - <strong>Hạn chế sử dụng điện thoại vào buổi tối</strong>, đặc biệt là trong khoảng 30–60 phút trước khi đi ngủ, làm giảm tác động của ánh sáng xanh đến việc tiết hormone melatonin – chất gây buồn ngủ.
+                </span>
+                <br />
+                <span className="ml-6">
+                  - Sử dụng các công cụ quản lý thời gian và ứng dụng hỗ trợ giấc ngủ (chế độ “Night Shift”, “Digital Wellbeing”, “Forest”...).
+                </span>
+                <br />
+                <span className="ml-6">
+                  - <strong>Ưu tiên những hoạt động thư giãn</strong> không dùng thiết bị như đọc sách giấy, thiền nhẹ, giúp não bộ được "hạ nhiệt" và dễ dàng đi vào giấc ngủ sâu.
+                </span>
+                <br />
+                <br />
+                Ánh sáng xanh từ điện thoại đang âm thầm tác động đến nhịp sinh học, chất lượng giấc ngủ và sức khỏe của học sinh THPT. Việc thay đổi thói quen sử dụng thiết bị, đặc biệt vào buổi tối, là chìa khóa để bảo vệ trí tuệ, thể chất và tinh thần của thế hệ trẻ. Thông qua sự chung tay của học sinh, gia đình, nhà trường và cộng đồng, chúng ta hoàn toàn có thể xây dựng một môi trường sống và học tập lành mạnh, nơi công nghệ được sử dụng một cách thông minh, an toàn và bền vững.
               </Typography.Text>
               <Flex justify="end" className="lg:mx-[200px] xl:mx-[250px] mx-5">
                 <Typography.Text className="text-xl font-bold">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { a1, a2, a3, a4, a5 } from "../assets";
+import { a1, a2, a3, a4, a5, hinh1New, hinh2New, hinh4New, hinh5New, hinh6New } from "../assets";
 
 export interface ScreenType {
   key: React.Key;
@@ -15,19 +15,19 @@ export default function useAppViewModel() {
     setActiveLink(_activeLink);
     switch (_activeLink) {
       case "#section0":
-        setCurrentImage(a1);
+        setCurrentImage(hinh4New);
         break;
       case "#section1":
-        setCurrentImage(a2);
+        setCurrentImage(hinh1New);
         break;
       case "#section2":
-        setCurrentImage(a3);
+        setCurrentImage(hinh2New);
         break;
       case "#section3":
-        setCurrentImage(a4);
+        setCurrentImage(hinh6New);
         break;
       case "#section4":
-        setCurrentImage(a5);
+        setCurrentImage(hinh5New);
         break;
     }
   };
